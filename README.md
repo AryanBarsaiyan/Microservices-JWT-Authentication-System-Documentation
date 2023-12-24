@@ -229,7 +229,8 @@ For using the API endpoints, you can use Postman or any other API testing tool o
       - Status 200
       - JSON object with a success message and the created user's details.
 
-![Register](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/fccdd872-61e9-4d6b-baca-93ae6792ed20)
+![Register](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/f5c7f62b-d2b4-4a08-a328-03955018e6c2)
+
 
 
 - **Endpoint 2:** `/api/user/login`
@@ -256,9 +257,9 @@ For using the API endpoints, you can use Postman or any other API testing tool o
           }
         }
       ```
-![Login](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/1dff4140-1d98-4e0e-9e6c-cf91c3aa3d0d)
+![Login](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/578582e3-3b2c-486d-a2e7-4f536aa3ec8e)
 
-![jwt token](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/a155d69b-c355-4dec-929e-a8a9b5804b2a)
+![jwt token](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/ca1fab29-5192-4a5b-a670-3e90afe129fc)
 
 
 - **Endpoint 3:** `/api/user/candidate`
@@ -316,10 +317,11 @@ For using the API endpoints, you can use Postman or any other API testing tool o
   - The POST endpoint adds a new candidate to the database. It requires a valid JWT token in the Authorization header for authentication.
   - The GET endpoint retrieves candidates created by the logged-in user. It also requires a valid JWT token in the Authorization header.
   - The response includes a success message and the details of the candidate(s) for the respective operation.
-    
-![createCandidate](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/37c6582c-92d3-4993-a075-cf6012839442)
 
-![getCandidate](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/f0e81376-03dd-42f9-9844-ce685e0f268a)
+![createCandidate](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/bf5bb2b6-fa08-4070-8cbb-626ec2e78a22)
+
+![getCandidate](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/cb01758d-29ca-4dcf-bf28-9c04076554bb)
+
 
 
 - **Endpoint 4:** `/api/user/logout`
@@ -329,8 +331,8 @@ For using the API endpoints, you can use Postman or any other API testing tool o
         - Requires a valid JWT token in the Authorization header.
         - Response:
             - "Access token cleared"
-              
-![logout](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/5965d9fa-289d-4195-959a-49793ff12a11)
+![logout](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/331cc8ab-22a4-4692-be74-1a2498795a94)
+
 
 ### Public API Microservice (Public ApiKey Server)
 
@@ -361,8 +363,7 @@ For using the API endpoints, you can use Postman or any other API testing tool o
         }
       }
       ```
-      
-![getUserProfile](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/49e85c21-ada8-4468-982a-55e66bef80ee)
+![getUserProfile](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/afb5d5f3-e709-4b07-bb3e-4335bd0051c7)
 
 - **Endpoint 2:** `/api/public/candidate`
   - **Method:** GET
@@ -393,9 +394,7 @@ For using the API endpoints, you can use Postman or any other API testing tool o
         ]
       }
       ```
-      
-![getListOfCandidates](https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication/assets/82722871/f22b58ca-b8f2-48ef-bc3f-dea110d99066)
-
+![getListOfCandidates](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation/assets/82722871/0a8ec2d1-c593-43ff-8cfd-f937f32a6c33)
 
 ## Connection Between Main Service and Public API Microservice
 
