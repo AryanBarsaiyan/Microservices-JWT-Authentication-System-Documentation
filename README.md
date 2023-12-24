@@ -1,5 +1,9 @@
 # Node.js Microservices: JWT Authentication System Documentation
 
+Welcome to the documentation for the Node.js Microservices JWT Authentication System. This system provides a secure and scalable authentication mechanism for your microservices architecture using JSON Web Tokens (JWT).
+
+For the most up-to-date information, and detailed instructions and for a better view, please refer to the [README](https://github.com/AryanBarsaiyan/Microservices-JWT-Authentication-System-Documentation).
+
 ## Overview
 
 The goal of this project is to implement a JWT (JSON Web Token) authentication system using Node.js, comprising two microservices:
@@ -31,45 +35,72 @@ If Node.js is not installed on your system, follow these steps:
      ```
      If installed correctly, these commands will display the versions of Node.js and npm.
 
-### Project Setup
+### Project Setup Using GitHub
 
-Now that Node.js is installed, you can proceed with the setup of the project:
+If you prefer using GitHub to set up the project, follow these steps:
 
- - Clone the Repository
-  ```bash
-  git clone https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication.git
-  ```
-- Navigate to the Project Directory
-  ```bash
-  cd nodejs-microservices-jwt-authentication
-  ```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/AryanBarsaiyan/nodejs-microservices-jwt-authentication.git
+   ```
 
-- Install dependencies:(make sure you are in the root directory)
-  ```bash
-    npm install
-    ```
-- Create a `.env` file in the root directory and add the following environment variables:
-    ```bash
-    #Gateway
-    MONGO_URI=MongoDB_URI
-    GATEWAY_PORT=5000
-    NODE_ENV=development
-    #User
-    USER_APP_URL=http://localhost:5001
-    JWT_SECRET_KEY=secret
-    USER_APP_PORT=5001
-    #Public
-    PUBLIC_APP_URL=http://localhost:5002
-    PUBLIC_APP_PORT=5002
-    ```
-- Run the project:
-    ```bash
-    npm start
-    ```
-**Note:**
-- The default gateway server will run on http://localhost:5000/.
-- Sample endpoints will look like http://localhost:5000/api/user/register, where you replace `/api/user/register` with the desired endpoint.
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd nodejs-microservices-jwt-authentication
+   ```
 
+3. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Create a `.env` file:**
+   - In the root directory, create a file named `.env`.
+   - Add the following environment variables to the `.env` file:
+     ```env
+     # Gateway
+     MONGO_URI=MongoDB_URI
+     GATEWAY_PORT=5000
+     NODE_ENV=development
+     # User
+     USER_APP_URL=http://localhost:5001
+     JWT_SECRET_KEY=secret
+     USER_APP_PORT=5001
+     # Public
+     PUBLIC_APP_URL=http://localhost:5002
+     PUBLIC_APP_PORT=5002
+     ```
+
+5. **Run the Project:**
+   ```bash
+   npm start
+   ```
+
+### Project Setup Using Zip File
+
+If you prefer using a Zip file to set up the project, follow these steps:
+
+1. **Extract the Zip File:**
+   - Extract the contents of the Zip file to your desired project location.
+
+2. **Navigate to the Project Directory:**
+   ```bash
+   cd path/to/extracted/folder/nodejs-microservices-jwt-authentication
+   ```
+
+3. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
+   
+4. **Run the Project:**
+   ```bash
+   npm start
+   ```
+
+### API Endpoints
+
+For using the API endpoints, you can use Postman or any other API testing tool of your choice. The base URL for the API is `http://localhost:5000`.
 
 ## Database Design
 
